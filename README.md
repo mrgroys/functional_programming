@@ -37,7 +37,8 @@ class Solution:
         
         return prev2
 ```
-2.	**Jumping Game 2**\
+![Image alt](https://github.com/mrgroys/functional_programming/blob/main/1_Climbing_stairs.png)\
+2.	**Jumping Game II**\
 Разбивается путь на сегменты. Каждый сегмент - это максимальное расстояние, которое можно пройти за один прыжок. Когда заканчивается текущий сегмент, делается следующий прыжок в самую дальнюю точку из всех доступных в этом сегменте.
 ```
 class Solution:
@@ -56,6 +57,7 @@ class Solution:
         
         return jumps
 ```
+![Image alt](https://github.com/mrgroys/functional_programming/blob/main/2_Jump_game_II.png)\
 3. **Pascal’s Triangle 2**\
 Нужно получить конкретную строку треугольника Паскаля без построения всего треугольника. Каждое число в строке (кроме крайних единиц) вычисляется как сумма двух чисел из предыдущей строки. Создается массив из единиц, для каждой позиции обновляется значение как сумму текущего и предыдущего элемента, далее двигаемся справа налево - это позволяет использовать старые значения до их обновления.
 ```
@@ -69,7 +71,8 @@ class Solution:
         
         return row
 ```
-4.	**Best time to buy and sell stock 1**\
+![Image alt](https://github.com/mrgroys/functional_programming/blob/main/3-Pascals_triangle_II.png)\
+4.	**Best time to buy and sell stock**\
 Нужно найти максимальную прибыль от покупки и продажи акций (купить до продажи). Сначала запоминаем цену первого дня как минимальную, далее для каждого следующего дня считаем прибыл если продать сегодня (цена сегодня - минимальная цена), обновляем максимальную прибыль, обновляем минимальную цену если нашли дешевле.
 ```
 class Solution:
@@ -85,7 +88,8 @@ class Solution:
         
         return max_profit
 ```
-5.	**Best time to buy and sell stock 2**\
+![Image alt](https://github.com/mrgroys/functional_programming/blob/main/4_Best_time_to_buy_and_sell_stock.png)\
+5.	**Best time to buy and sell stock II**\
 Нужно максимизировать прибыль при множественных покупках и продажах акций. Собираем всю восходящую прибыль - покупаем вчера, продаем сегодня, если цена выросла. Проходим по всем дням начиная со второго, если цена сегодня выше цены вчера - добавляем разницу к прибыли, это эквивалентно покупке вчера и продаже сегодня.
 ```
 class Solution:
@@ -98,3 +102,4 @@ class Solution:
         
         return profit
 ```
+![Image alt](https://github.com/mrgroys/functional_programming/blob/main/5_Best_time_to_buy_and_sell_stock_II.png)
